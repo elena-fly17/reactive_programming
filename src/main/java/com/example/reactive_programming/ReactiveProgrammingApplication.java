@@ -3,6 +3,7 @@ package com.example.reactive_programming;
 import com.example.reactive_programming.tasks.Task_1;
 import com.example.reactive_programming.tasks.Task_2;
 import com.example.reactive_programming.tasks.Task_3;
+import com.example.reactive_programming.tasks.Task_4;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import reactor.core.publisher.Flux;
@@ -30,7 +31,11 @@ public class ReactiveProgrammingApplication {
 //		task_2.processFiveElements(flux);
 
 		// проверка работы метода из Task_3
-		Task_3 task_3 = new Task_3();
-		task_3.printOddNumbers(flux);
+//		Task_3 task_3 = new Task_3();
+//		task_3.printOddNumbers(flux);
+
+		// проверка работы метода из Task_4
+		Task_4 task_4 = new Task_4();
+		task_4.printNumbers(flux);
 	}
 }
